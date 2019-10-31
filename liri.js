@@ -1,12 +1,13 @@
-require("dotenv").config();
+require('dotenv').config();
 var axios = require("axios");
 var fs = require("fs");
+var Spotify = require("node-spotify-api");
 var keys = require("./keys.js");
 // read & set environmental variables with the dotenv package
 
 
 // Able to access my keys informaiton
-var Spotify = require("node-spotify-api");
+
 
 var spotify = new Spotify(keys.spotify);
 
@@ -15,7 +16,12 @@ var songAPiI = function(song){
     type: 'track', 
     query: song,
     limit: 1
-  }, function(err, data) {
+  }, 
+   var musicData = [
+     
+   ]
+  
+  function(err, data) {
     if (err) {
       return console.log('Error occurred: ' + err);
     }
@@ -35,7 +41,7 @@ var searchMovie = function(movie) {
       // Place the response.data into a variable, jsonData.
       var jsonData = response.data;
   
-      var showData = [
+      var movieData = [
         "Title: " + jsonData.Title,
         "Release Date: " + jsonData.Year,
         "Rating: " + jsonData.Rated,
@@ -47,9 +53,9 @@ var searchMovie = function(movie) {
       ].join("\n\n");
 
       // Append showData and the divider to log.txt, print showData to the console
-      fs.appendFile("random.txt", showData + divider, function(err) {
+      fs.appendFile("random.txt", movieData + divider, function(err) {
         if (err) throw err;
-        console.log(showData);
+        console.log(movieData);
       });
     });
   
@@ -57,18 +63,18 @@ var searchMovie = function(movie) {
 
 
 };
-var api = process.argv[2];
-console.log(process.argv[2])
+var command = process.argv[2];
+console.log("Input Command:" + command)
 
 var userInput = process.argv[3];
-console.log(userInput)
+console.log("User Input: " + userInput)
 
 
-if (api === `movie-this`) {
+if (command === `movie-this`) {
   searchMovie(userInput)
 }
 
-else if (api === `spotify-this-song`) {
+else if (command === `spotify-this-song`) {
   songAPiI(userInput)
 }
 // searchMovie();

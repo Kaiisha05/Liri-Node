@@ -49,3 +49,37 @@ Plot:When the newly-crowned Queen Elsa accidentally uses her power to turn thing
 Actors:Kristen Bell, Idina Menzel, Jonathan Groff, Josh Gad
 ------------------------------------------------------------
 
+Title: The Shawshank Redemption
+
+Release Date: 1994
+
+Rating: R
+
+Rotten Tomatoes Rating: 90%
+
+Country Produce: USA
+
+Language:English
+
+Plot:Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.
+
+Actors:Tim Robbins, Morgan Freeman, Bob Gunton, William Sadler
+------------------------------------------------------------
+
+Title: Aladdin
+
+Release Date: 1992
+
+Rating: G
+
+Rotten Tomatoes Rating: 94%
+
+Country Produce: USA
+
+Language:English
+
+Plot:A kindhearted street urchin and a power-hungry Grand Vizier vie for a magic lamp that has the power to make their deepest wishes come true.
+
+Actors:Scott Weinger, Robin Williams, Linda Larkin, Jonathan Freeman
+------------------------------------------------------------
+
