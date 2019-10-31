@@ -1,4 +1,4 @@
-js
+
 console.log('this is loaded');
 
 exports.spotify = {
@@ -6,5 +6,3 @@ exports.spotify = {
   secret: process.env.SPOTIFY_SECRET
 };
 
-js
-  var keys = require("./keys.js");
