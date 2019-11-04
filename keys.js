@@ -3,4 +3,4 @@ exports.spotify = {
   secret: process.env.SPOTIFY_SECRET
 };
 
-console.log('this is loaded');
+// console.log('this is loaded');
