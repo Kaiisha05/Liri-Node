@@ -3,24 +3,42 @@ var axios = require("axios");
 var fs = require("fs");
 var Spotify = require("node-spotify-api");
 var keys = require("./keys.js");
-// read & set environmental variables with the dotenv package
-
-
-// Able to access my keys informaiton
-
-
 var spotify = new Spotify(keys.spotify);
+var divider = "\n------------------------------------------------------------\n\n";
+var mrNobodyLink = "(link: http://www.imdb.com/title/tt0485947/)";
+var defaultMessage = "If you haven't watched Mr. Nobody, then you should,";
+var defaultMessage2 = "It's on Netflix!";
+var command = process.argv[2];
+var userInput = process.argv.slice(3).join(" ");
 
-// switch (command) {
-//   case `movie-this`:
-//     text = userInput;
-//     break;
-//     case `spotify-this-song`:
-//       text = userInput;
-//       break;
-// }
 
-var songAPI = function (song) {
+switch (command) {
+  case (`concert-this`):
+    concertSearch();
+    break;
+  case (`spotify-this-song`):
+    if (userInput) {
+      songAPI(userInput);
+    } else {
+      songAPI("The Sign");
+    }
+    break;
+  case ('movie-this'):
+    if (userInput) {
+      searchMovie(userInput);
+    } else {
+      searchMovie("Mr. Nobody");
+    }
+    break;
+  case ('do-what-it-says'):
+    defaultSong();
+    break;
+  default:
+    console.log("Try again!")
+};
+
+
+function songAPI(song) {
   spotify.search({
     type: 'track',
     query: song,
@@ -45,8 +63,8 @@ var songAPI = function (song) {
 };
 
 
-var concertSearch = function (artist) {
-  var divider = "\n------------------------------------------------------------\n\n";
+function concertSearch(artist) {
+  // var divider = "\n------------------------------------------------------------\n\n";
 
   var concertURL = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
 
@@ -59,6 +77,7 @@ var concertSearch = function (artist) {
       "Venue: " + concertData.venue.name,
       "Location: " + concertData.venue.city + "," + concertData.venue.region,
       "Date: " + concertData.datetime
+      // date format needs to be (MM/DD/YYYY)...use moment
     ].join("\n\n");
     console.log(bandsData);
     fs.appendFile("log.txt", bandsData + divider, function (err) {
@@ -71,10 +90,7 @@ var concertSearch = function (artist) {
   })
 };
 
-var searchMovie = function (movie) {
-  // divider will be used as a spacer between the tv data we print in log.txt
-  var divider = "\n------------------------------------------------------------\n\n";
-
+function searchMovie(movie) {
   var movieURL = "https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
 
   axios.get(movieURL).then(function (response) {
@@ -97,25 +113,28 @@ var searchMovie = function (movie) {
       if (err) {
         console.log("Error: " + err);
       } else {
-        console.log(movieData);
+        console.log(movieData)
+        if (movie === "Mr. Nobody") {
+          console.log(divider, defaultMessage, mrNobodyLink + ". " + defaultMessage2);
+        }
       };
     });
   });
 };
 
 
-var command = process.argv[2];
-// console.log("Input Command:" + command)
+    // var command = process.argv[2];
+    // console.log("Input Command:" + command)
 
-var userInput = process.argv.slice(3).join(" ");
-// console.log("User Input: " + userInput)
+    // var userInput = process.argv.slice(3).join(" ");
+    // console.log("User Input: " + userInput)
 
-if (command === `movie-this`) {
-  searchMovie(userInput)
-}
-else if (command === `spotify-this-song`) {
-  songAPI(userInput)
-}
-else if (command === `concert-this`) {
-  concertSearch(userInput)
-};
+    // if (command === `movie-this`) {
+    //   searchMovie(userInput)
+    // }
+    // else if (command === `spotify-this-song`) {
+    //   songAPI(userInput)
+    // }
+    // else if (command === `concert-this`) {
+    //   concertSearch(userInput)
+    // };
