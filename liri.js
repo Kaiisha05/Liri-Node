@@ -47,10 +47,8 @@ function songAPI(song) {
     function (err, data) {
       if (err) {
         return console.log('Error occurred: ' + err);
-        // return;
         //  ].join("\n\n");
       } else {
-        // for (var s = 0; s > data.tracks.items.length; s++) {
         let spotifyData = data.tracks.items[0];
         // console.log(musicData);
         console.log("Artist: " + spotifyData.artists[0].name);
@@ -58,6 +56,9 @@ function songAPI(song) {
         console.log("Link: " + spotifyData.preview_url);
         console.log("Album: " + spotifyData.album.name);
         // }
+      }
+      if (song === "The Sign") {
+        console.log(divider, spotifyData);
       }
     });
 };
@@ -94,7 +95,6 @@ function searchMovie(movie) {
   var movieURL = "https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
 
   axios.get(movieURL).then(function (response) {
-    // Place the response.data into a variable, jsonData.
     var jsonData = response.data;
 
     var movieData = [
@@ -122,7 +122,22 @@ function searchMovie(movie) {
   });
 };
 
+function defaultSong() {
+  // This block of code will read from the "random.txt" file.
+  // It's important to include the "utf8" parameter or the code will provide stream data (garbage)
+  // The code will store the contents of the reading inside the variable "data"
+  fs.readFile("random.txt", "utf8", function (error, data) {
 
+    // If the code experiences any errors it will log the error to the console.
+    if (error) {
+      return console.log(error);
+    }
+    // Then split it by commas (to make it more readable)
+    var randomText = data.split(",");
+    // insert the text within the songAPI parameters
+    songAPI(randomText[1])
+  });
+}
     // var command = process.argv[2];
     // console.log("Input Command:" + command)
 
