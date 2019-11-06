@@ -34,7 +34,7 @@ switch (command) {
     defaultSong();
     break;
   default:
-    console.log("Try again!")
+    console.log("Whoops, try again!")
 };
 
 
@@ -65,8 +65,6 @@ function songAPI(song) {
 
 
 function concertSearch(artist) {
-  // var divider = "\n------------------------------------------------------------\n\n";
-
   var concertURL = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
 
   axios.get(concertURL).then(function (response) {
@@ -130,12 +128,16 @@ function defaultSong() {
 
     // If the code experiences any errors it will log the error to the console.
     if (error) {
-      return console.log(error);
+      return console.log("Error: " + error);
     }
     // Then split it by commas (to make it more readable)
     var randomText = data.split(",");
-    // insert the text within the songAPI parameters
-    songAPI(randomText[1])
+    // insert the item that is 2nd within the random.txt file within the songAPI parameters
+    songAPI(randomText[1]);
+    // searchMovie(randomText[1]);
+    // movie-this, "The Grinch"
+    // concertSearch(randomText[1]);
+    // concert-this, "Tina Turner"
   });
 }
     // var command = process.argv[2];
