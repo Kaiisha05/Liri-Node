@@ -94,7 +94,7 @@ var songAPI = function (song) {
         if (err) {
           console.log("Error: " + err);
         } else {
-          console.log("This worked!-movieData");
+          console.log(movieData);
         };
       });
     });
