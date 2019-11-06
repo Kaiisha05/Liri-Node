@@ -20,10 +20,12 @@ https://drive.google.com/file/d/1tTg2Uy5BispGMfcpepcPTzmCs4zLfufg/view
 
 
 
-Link to deployed app:
+#Link to deployed app:
 https://kaiisha05.github.io/Liri-Node/
 
-1. Clearly state the problem the app is trying to solve (i.e. what is it doing and why)
-2. Give a high-level overview of how the app is organized
-3. Give start-to-finish instructions on how to run the app
-7. State your role in the app development
+
+
+<!-- upload video with sound walking through what the app does
+video to include the app in use.
+
+Still need to clean up the code and add in the default searches in the event of no user input as well as update the time/date on bands in town using moment.js -->
