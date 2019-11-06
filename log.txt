@@ -1,73 +1,24 @@
-Title: The Last Dragon
+Venue: Smoothie King Center
 
-Release Date: 1985
+Location: New Orleans,LA
 
-Rating: PG-13
+Date: 2019-11-12T19:00:48
+------------------------------------------------------------
 
-Rotten Tomatoes Rating: 59%
+Title: The Fox and the Hound
+
+Release Date: 1981
+
+Rating: G
+
+Rotten Tomatoes Rating: 70%
 
 Country Produce: USA
 
 Language: English
 
-Plot: In New York City, a young man searches for a Master to obtain the final level of martial arts mastery known as the Glow.
+Plot: Two childhood friends find themselves forced to become enemies.
 
-Actors: Taimak, Vanity, Christopher Murney, Julius Carry
-------------------------------------------------------------
-
-Title: Frozen
-
-Release Date: 2013
-
-Rating: PG
-
-Rotten Tomatoes Rating: 90%
-
-Country Produce: USA
-
-Language: English, Norwegian
-
-Plot: When the newly-crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister Anna teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.
-
-Actors: Kristen Bell, Idina Menzel, Jonathan Groff, Josh Gad
-------------------------------------------------------------
-
-Venue: [object Object]
-------------------------------------------------------------
-
-Venue: [object Object]
-------------------------------------------------------------
-
-Venue: [object Object]
-------------------------------------------------------------
-
-Venue: undefined
-------------------------------------------------------------
-
-Venue: [object Object],[object Object]
-------------------------------------------------------------
-
-Venue: [object Object]
-------------------------------------------------------------
-
-Venue: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
-------------------------------------------------------------
-
-Venue: [object Object]
-------------------------------------------------------------
-
-Venue: [object Object]
-------------------------------------------------------------
-
-Venue: Legacy Arena at the BJCC
-------------------------------------------------------------
-
-Venue: Legacy Arena at the BJCC
-------------------------------------------------------------
-
-Venue: Legacy Arena at the BJCC
-------------------------------------------------------------
-
-Venue: Legacy Arena at the BJCC
+Actors: Mickey Rooney, Kurt Russell, Pearl Bailey, Jack Albertson
 ------------------------------------------------------------
 

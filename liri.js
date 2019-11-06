@@ -60,12 +60,14 @@ var concertSearch = function (artist) {
       "Location: " + concertData.venue.city + "," + concertData.venue.region,
       "Date: " + concertData.datetime
     ].join("\n\n");
-console.log(bandsData);
-//     fs.appendFile("log.txt", bandsData + divider,
-//       function (err) {
-//         if (err) throw err;
-//         console.log("Error: ", err);
-//       })
+    console.log(bandsData);
+    fs.appendFile("log.txt", bandsData + divider, function (err) {
+      if (err) {
+        console.log("Error: " + err);
+      } else {
+        console.log("Check log.txt");
+      };
+    });
   })
 };
 
