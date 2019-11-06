@@ -1,4 +1,6 @@
-# Liri-Node
+# LIRI-Node
+
+LIRI (Language-Interpretation-Recognition-Interface) App takes in a parameter via command line using node and gives you back data.
 
 App will search Spotify, Bands In Town and OMDB.
 
@@ -15,6 +17,15 @@ Venue, location adn venue.
 
 When the user inputs the commands, the information will populate in the terminal. With the OMDB it will also append to the log.txt file.
 
+#Node Packages Included:
+Node-Spotify-API
+Axios:
+    OMDB API
+    Bands in Town API
+Moment
+DotEnv
+
+#App Demo (Silent):
 https://drive.google.com/file/d/1tTg2Uy5BispGMfcpepcPTzmCs4zLfufg/view
 
 
