@@ -82,7 +82,7 @@ function concertSearch(artist) {
       "Venue: " + concertData.venue.name,
       "Location: " + concertData.venue.city + "," + location,
       "Date: " + concertData.datetime
-    //   // date format needs to be (MM/DD/YYYY)...use moment
+    //date format needs to be (MM/DD/YYYY)...use moment
     ].join("\n\n");
     // console.log(bandsData);
     fs.appendFile("log.txt", bandsData + divider, function (err) {
