@@ -46,3 +46,78 @@ Plot: On the outskirts of Whoville, there lives a green, revenge-seeking Grinch 
 Actors: Jim Carrey, Taylor Momsen, Kelley, Jeffrey Tambor
 ------------------------------------------------------------
 
+Title: 6 Underground
+
+Release Date: 2019
+
+Rating: R
+
+Rotten Tomatoes Rating: 37%
+
+Country Produce: USA
+
+Language: English, Turkmen, Cantonese, Italian, Spanish, Ukrainian, French
+
+Plot: Meet a new kind of action hero. Six untraceable agents, totally off the grid. They've buried their pasts so they can change the future.
+
+Actors: Ryan Reynolds, Mélanie Laurent, Manuel Garcia-Rulfo, Ben Hardy
+------------------------------------------------------------
+
+Title: Mr. Nobody
+
+Release Date: 2009
+
+Rating: R
+
+Rotten Tomatoes Rating: 67%
+
+Country Produce: Belgium, Germany, Canada, France, USA, UK
+
+Language: English, Mohawk
+
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+------------------------------------------------------------
+
+Venue: BOK Center
+
+Location: Tulsa,
+
+Date: 2020-02-05T19:30:00
+------------------------------------------------------------
+
+Venue: KFC Yum! Center
+
+Location: Louisville,
+
+Date: 2020-02-29T20:00:00
+------------------------------------------------------------
+
+Where to see: Migos
+
+Venue: 5th Street Beach Stage
+
+Location: Virginia Beach,
+
+Date: 2020-04-24T03:30:00
+------------------------------------------------------------
+
+Where to see: Migos
+
+Venue: 5th Street Beach Stage
+
+Location: Virginia Beach,
+
+Date: 2020-04-24T03:30:00
+------------------------------------------------------------
+
+Where to see: Diana Ross
+
+Venue: The Louisville Palace presented by Cricket Wireless
+
+Location: Louisville,
+
+Date: 2020-02-23T19:30:00
+------------------------------------------------------------
+

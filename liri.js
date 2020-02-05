@@ -10,11 +10,12 @@ var defaultMessage = "If you haven't watched Mr. Nobody, then you should,";
 var defaultMessage2 = "It's on Netflix!";
 var command = process.argv[2];
 var userInput = process.argv.slice(3).join(" ");
+// var moment = require ("moment");
 
 
 switch (command) {
   case (`concert-this`):
-    concertSearch();
+    concertSearch(userInput);
     break;
   case (`spotify-this-song`):
     if (userInput) {
@@ -65,20 +66,24 @@ function songAPI(song) {
 
 
 function concertSearch(artist) {
+  var location = ""
   var concertURL = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
 
   axios.get(concertURL).then(function (response) {
 
     // console.log("this works")
     var concertData = response.data[0];
-    // console.log(concertData);
+
+    
+    console.log(concertData);
     var bandsData = [
+      "Where to see: " + artist,
       "Venue: " + concertData.venue.name,
-      "Location: " + concertData.venue.city + "," + concertData.venue.region,
+      "Location: " + concertData.venue.city + "," + location,
       "Date: " + concertData.datetime
-      // date format needs to be (MM/DD/YYYY)...use moment
+    //   // date format needs to be (MM/DD/YYYY)...use moment
     ].join("\n\n");
-    console.log(bandsData);
+    // console.log(bandsData);
     fs.appendFile("log.txt", bandsData + divider, function (err) {
       if (err) {
         console.log("Error: " + err);
@@ -86,8 +91,10 @@ function concertSearch(artist) {
         console.log("Check log.txt");
       };
     });
-  })
-};
+  }
+)
+}
+
 
 function searchMovie(movie) {
   var movieURL = "https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
@@ -140,6 +147,9 @@ function defaultSong() {
     // concert-this, "Tina Turner"
   });
 }
+
+
+/* ---------- TESTING --------- */
     // var command = process.argv[2];
     // console.log("Input Command:" + command)
 
