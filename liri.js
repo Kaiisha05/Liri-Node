@@ -74,6 +74,7 @@ function concertSearch(artist) {
     // console.log("this works")
     var concertData = response.data[0];
 
+
     
     console.log(concertData);
     var bandsData = [
